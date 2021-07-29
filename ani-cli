@@ -6,9 +6,9 @@ new_line='
 '
 # to trick 9anime that a browser is being used
 curl_headers="
--H 'authority: 9anim.vip'
+-H 'authority: 99anime.me'
 -H 'user-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36'
--H 'referer: https://9anim.vip/serie/1068/sword-art-online.html'
+-H 'referer: https://99anime.me/serie/1068/sword-art-online.html'
 "
 curl_headers=
 tab_space=$(printf '\t')
@@ -33,7 +33,7 @@ query_string=${query_string#+}
 # GETTING THE SEARCH PAGE #
 ###########################
 html=$(
-curl -s "https://9anim.vip/search" \
+curl -s "https://99anime.me/search" \
 	-G -d "q=$query_string" $curl_headers
 )
 
